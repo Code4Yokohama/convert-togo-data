@@ -17,3 +17,7 @@ https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/covid-19/takeout-deli
 - おそらく、新規登録なのに修正依頼になっているエントリーがある
 
 Pythonで書いたが、JSで書き直してYOKOHAMA to Goのレポジトリに持ち込むのが良いか。
+
+## いまのところの方針
+
+修正依頼のレコードがどのレコードに対するものか、ngramを用いてレコードの文字列の近似値を評価して判断する。
