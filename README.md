@@ -3,11 +3,11 @@
 
 横浜市経済局が収集している市内テイクアウト＆デリバリー情報を　YOKOHAMA to Goに取り込むためのクレンジング。
 
-データはここから入手可能。
+## データはここから入手可能
 
 https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/covid-19/takeout-delivery/takeout.html
 
-解決の必要があった課題
+## 解決の必要があった課題
 
 主に、「修正依頼」レコードに起因する問題。
 
