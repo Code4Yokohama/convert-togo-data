@@ -16,4 +16,4 @@ https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/covid-19/takeout-deli
 - 複数回修正依頼が来ているケースがある
 - おそらく、新規登録なのに修正依頼になっているエントリーがある
 
-Pythonで書いたが、JSで書き直せしてYOKOHAMA to Goのレポジトリに持ち込むのが良いか。
+Pythonで書いたが、JSで書き直してYOKOHAMA to Goのレポジトリに持ち込むのが良いか。
