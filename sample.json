@@ -1,0 +1,67 @@
+{
+    "@id": "https://to-go.yokohama/shop/XXXXX",
+    "@context": "http://schema.org",
+    "@type": "Restaurant",
+    "name": "WA GO 鶴屋町店",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "神奈川区",
+        "streetAddress": "鶴屋町1-7-1　デリス横浜ビル6F"
+    },
+    "telephone": "045-594-7721",
+    "location": "横浜駅",
+    "latitude": 999.9999,
+    "longitude": 999.9999,
+    "image": "https://to-go.yokohama/shop/0001/images/main.jpg",
+    "openingHour": "定休日：日曜日\n日曜日、祭日を除く10:30～15:30まで対応しております。\nテイクアウトは15:00までにご連絡下さい。",
+    "url": "https://hitosara.com/0006119202/",
+    "servesCuisine": "和食",
+    "description": "デリバリーはお魚はもちろん、お肉関係も行っております。",
+    "identifier": [
+        {
+            "@type": "PropertyValue",
+            "name": "twitter",
+            "value": "@XXXXX"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "facebook",
+            "value": "XXXXX"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "yokohama-to-go",
+            "value": "XXXXX"
+        }
+    ],
+    "areaServed": "横浜駅前商店街（仮）",
+    "makesOffer": [
+        {
+            "name": "delivery"
+        },
+        {
+            "name": "to-go"
+        }
+    ],
+    "hasMenu": {
+        "@type": "Menu",
+        "description": "＊惣菜\n・山梨県産健味鶏 唐揚げ→税込1,200円\n・やまゆりポーク炭火焼き→税込1,200円\n・出汁巻き玉子→税込800円\n・アジフライ（境港産）→税込1,200円（3枚入り）\n・大羽イワシのフライ（境港産）\n→税込1,200円（3枚入り）\n・牛ロースステーキ（200グラム）\n→税込2,300円\n\n＊お弁当\n・WA GO特製弁当→税込1,200円\n・ランチメニューにある各種焼き物\n→税込1,000円\n（☆塩焼き ☆西京焼き ☆照り焼き をお選び頂けます。）\n（仕入れ状況によって、それぞれ魚が変わる場合がございます。）",
+        "hasMenuItem": [
+            {
+                "@type": "MenuItem",
+                "name": "※惣菜 山梨県産健味鶏 炭火焼き (塩胡椒焼き、または山椒焼きをお選び頂けます。)",
+                "price": "1200" 
+            },
+            {
+                "@type": "MenuItem",
+                "name": "※惣菜 春鰆の西京焼き（2枚入り）",
+                "price": "1100" 
+            },
+            {
+                "@type": "MenuItem",
+                "name": "※お弁当 牛ロースステーキ重（お肉200グラム)",
+                "price": "2500" 
+            }
+        ]
+    }
+}

@@ -74,5 +74,3 @@ df.to_csv(str(date) + '_record.csv')
 df[(df['02　新規登録ですか、修正依頼ですか'] == '新規登録') | (df['02　新規登録ですか、修正依頼ですか'] == '修正済み')].to_csv(str(date) + '_updated.csv')
 # 処理できなかったレコードのみ書き出し
 df[df['02　新規登録ですか、修正依頼ですか'] == '修正依頼'].to_csv(str(date) + '_unfinished.csv')
-    
-

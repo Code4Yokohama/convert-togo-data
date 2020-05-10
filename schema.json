@@ -1,0 +1,180 @@
+{
+    "$id": "https://to-go.yokohama/shema/schema.json",
+    "$schema": "https://to-go.yokohama/shema/v1/schema.json",
+    "type": "object",
+    "properties": {
+        "@id": {
+            "type": "string",
+            "format": "iri"
+        },
+        "@context": {
+            "type": "string",
+            "pattern": "^http:\/\/schema.org$"
+        },
+        "@type": {
+            "type": "string",
+            "enum": ["Restaurant", "Other"]
+        },
+        "description": {
+            "type": "string",
+            "maxLength": 300
+        },
+        "image" : {
+            "type": "string",
+            "format": "iri"
+        },
+        "latitude" : {
+            "type": "number"
+        },
+        "longitude" : {
+            "type": "number"
+        },
+        "address": {
+            "type": "object",
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "pattern": "^PostalAddress$"
+                },
+                "addressLocality": {
+                    "type": "string"
+                },
+                "streetAddress": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            }
+        },
+        "location": {
+            "type": "string"
+        },
+        "areaServed": {
+            "type": "string"
+        },
+        "openingHours": {
+            "type": "string"
+        },
+        "telephone": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string",
+            "format": "iri"
+        },
+        "identifier": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "@type": {
+                            "type": "string",
+                            "pattern":"^PropertyValue$"
+                        }
+                    }
+                }
+            ]
+        },
+        "servesCuisine": {
+            "type": "string"
+        },
+        "makesOffer": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "@type": {
+                            "type": "string",
+                            "pattern": "^Offer$"
+                        },
+                        "name": {
+                            "type": "string",
+                            "pattern": "^delivery$"
+                        },
+                        "description": {
+                            "type": "string",
+                            "maxLength": 300
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "@type": {
+                            "type": "string",
+                            "pattern": "^Offer$"
+                        },
+                        "name": {
+                            "type": "string",
+                            "pattern": "^to-go$"
+                        },
+                        "description": {
+                            "type": "string",
+                            "maxLength": 300
+                        }
+                    }
+                }
+            ]
+        },
+        "hasMenu": {
+            "type": "object",
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "pattern": "^Menu$"
+                },
+                "description": {
+                    "type": "string",
+                    "maxLength": 300
+                },
+                "hasMenuItem": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "@type": {
+                                    "type": "string",
+                                    "pattern": "^MenuItem$"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "format": "iri"
+                                },
+                                "offers": {
+                                    "type": "object",
+                                    "properties": {
+                                        "@type": {
+                                            "type": "string",
+                                            "pattern": "^Offer$"
+                                        },
+                                        "price": {
+                                            "type": "number"
+                                        },
+                                        "availabilityEnds": {
+                                            "type": "string",
+                                            "format": "time"
+                                        },
+                                        "availabilityStarts": {
+                                            "type": "string",
+                                            "format": "time"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
