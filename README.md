@@ -3,13 +3,21 @@
 
 横浜市経済局が収集している市内テイクアウト＆デリバリー情報を　YOKOHAMA to Goに取り込むためのクレンジング。
 
-Pythonで書いてしまったが、JSで書き直してYOKOHAMA to Goのレポジトリに持ち込むのが良いか。
-
-## データはここから入手可能
+データはここから入手可能
 
 https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/covid-19/takeout-delivery/takeout.html
 
-## 解決の必要があった課題
+## 想定する作業手順
+
+1. CSVを調整（重複エントリーなどあるので事前に処理しておかなければならない）
+2. JSON化
+
+Pythonで書いてしまったが、JSで書き直してYOKOHAMA to Goのレポジトリに持ち込むのが良いか。
+
+
+## 1. CSVを調整
+
+以下の問題を調整する必要がある。
 
 主に、「修正依頼」レコードに起因する問題。
 
@@ -18,11 +26,13 @@ https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/covid-19/takeout-deli
 - 複数回修正依頼が来ているケースがある
 - おそらく、新規登録なのに修正依頼になっているエントリーがある
 
-## いまのところの方針
+### いまのところの方針
 
 修正依頼のレコードがどのレコードに対するものか、ngramを用いてレコードの文字列の近似値を評価して判断する。
 
-## JSONデータ検討
+うまくできていそう。
+
+## 2. JSONデータ検討
 
 アプリに読み込むJSONの構造を検討している。
 
