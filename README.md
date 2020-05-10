@@ -21,3 +21,9 @@ https://www.city.yokohama.lg.jp/business/kigyoshien/syogyo/covid-19/takeout-deli
 ## いまのところの方針
 
 修正依頼のレコードがどのレコードに対するものか、ngramを用いてレコードの文字列の近似値を評価して判断する。
+
+## JSONデータ検討
+
+アプリに読み込むJSONの構造を検討している。
+
+ひとまず、Schema.orgのRetaurant型に準拠させてjson schemaを書いた。必須項目の指定とか細かいところはやっていない。sample.jsonをテストでバリデーションしてみたが、うまくいっていそう。
