@@ -80,6 +80,18 @@
         "servesCuisine": {
             "type": "string"
         },
+        "review": {
+            "type": "object",
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "pattern":"^Review$"
+                },
+                "keywords": {
+                    "type": "string"
+                }
+            }
+        },
         "makesOffer": {
             "type": "array",
             "items": [
